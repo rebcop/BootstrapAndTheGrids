@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/grid1.html">Grid 1</a>
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="/grid2.html">Grid 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/grid3.html">Grid 3</a>
+                        <a class="nav-link active" aria-current="page" href="/grid3.html">Grid 3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/grid4.html">Grid 4</a>
@@ -66,10 +66,26 @@
         </div>
     </nav>
 
-    <main class="d-flex justify-content-center align-items-center bg-image">
-        <div class="text-center">
-            <h1 class="display-1 landing-text">Bootstrap and the Grids</h1>
-            <h3 class="text-light lead">An exercise in Bootstrap grid layouts</h3>
+    <main class="container py-3">
+        <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
+        <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
+
+    
+        <div class="row h-100">
+                        
+            <div class="col-7">
+                <article class="bg-secondary text-light p-3 h-100">Col Left</article>
+            </div>
+            <div class="col-5">
+                <div class="row h-100">
+                    <div class="col-12 pb-2 h-50">
+                        <article class="bg-secondary text-light p-3 h-100">Col Right</article>
+                    </div>
+                    <div class="col-12 pt-2 h-50">
+                        <article class="bg-dark text-light p-3 h-100">Col Right Bottom</article>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
